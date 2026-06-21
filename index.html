@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CosmoWraps | Launching Soon</title>
+  <meta name="description" content="Cosmo Wraps — wholesale chicken wraps. Good food, real fuel. Launching soon." />
+
+  <!-- Favicon (drop your file at /assets/favicon.png or .ico) -->
+  <link rel="icon" href="assets/favicon.png" />
+
+  <!-- Fonts: change these in CSS via --font-display / --font-body -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Online icon set (Follow Us + Wholesale Inquiries) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#top" aria-label="Cosmo Wraps home">
+        <img src="assets/logo.png" alt="Cosmo Wraps" />
+      </a>
+
+      <!-- Menu items live together here, right-aligned.
+           To add a tab, drop in another <a> and order it however you like. -->
+      <nav class="nav" id="nav" aria-label="Primary">
+        <a href="#top">Home</a>
+        <a href="#about">About</a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="top">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <p class="eyebrow">Wholesale Chicken Wraps</p>
+        <h1 class="hero-title">Good&nbsp;Food.<br />Real&nbsp;Fuel.</h1>
+        <p class="hero-sub">Freshly made wraps crafted with high-protein chicken, quality ingredients and made for cafés, restaurants &amp; retailers.</p>
+        <a href="#contact" class="btn btn-primary hero-btn">
+          Contact Us
+          <i class="fa-solid fa-arrow-right btn-arrow" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+    <!-- Food photo: stays behind text, scales with the viewport -->
+    <div class="hero-image" role="img" aria-label="Freshly made chicken wrap"></div>
+  </section>
+
+  <!-- ============ FEATURES ============ -->
+  <section class="features" id="about">
+    <div class="container features-inner">
+      <article class="feature">
+        <span class="feature-icon"><img src="assets/icon-protein.png" alt="" aria-hidden="true" /></span>
+        <div class="feature-body">
+          <h3>High in Protein</h3>
+          <p>Fuel your day the right way.</p>
+        </div>
+      </article>
+
+      <article class="feature">
+        <span class="feature-icon"><img src="assets/icon-healthy.png" alt="" aria-hidden="true" /></span>
+        <div class="feature-body">
+          <h3>Healthy Made</h3>
+          <p>Clean ingredients, better choices.</p>
+        </div>
+      </article>
+
+      <article class="feature">
+        <span class="feature-icon"><img src="assets/icon-chill.png" alt="" aria-hidden="true" /></span>
+        <div class="feature-body">
+          <h3>3 Days Chill</h3>
+          <p>Freshness that lasts longer.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ LAUNCHING SOON ============ -->
+  <section class="launch">
+    <div class="container launch-inner">
+      <p class="eyebrow">We're Wrapping Something Great</p>
+      <h2 class="launch-title">Launching Soon</h2>
+
+      <!-- Set your launch moment here once.  Format: YYYY-MM-DDTHH:mm:ss±hh:mm
+           (+04:00 = UAE / Gulf time). It counts to this fixed date, so a
+           page refresh never resets it. -->
+      <div class="countdown" id="countdown" data-launch="2026-07-25T09:00:00+04:00" aria-live="polite">
+        <div class="count-cell">
+          <span class="count-num" data-days>00</span>
+          <span class="count-label">Days</span>
+        </div>
+        <div class="count-cell">
+          <span class="count-num" data-hours>00</span>
+          <span class="count-label">Hours</span>
+        </div>
+        <div class="count-cell">
+          <span class="count-num" data-minutes>00</span>
+          <span class="count-label">Minutes</span>
+        </div>
+        <div class="count-cell">
+          <span class="count-num" data-seconds>00</span>
+          <span class="count-label">Seconds</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer" id="contact">
+    <div class="container">
+
+      <!-- Subscribe (green card, centered) -->
+      <div class="footer-subscribe">
+        <span class="bell"><i class="fa-solid fa-bell" aria-hidden="true"></i></span>
+        <h3>Be the first to know</h3>
+        <p>Get notified when we launch.</p>
+        <form class="subscribe-form" id="subscribeForm" novalidate>
+          <input type="email" id="emailInput" name="email" placeholder="Enter your email" autocomplete="email" required />
+          <button type="submit" class="btn-notify">Notify Me</button>
+        </form>
+        <p class="form-msg" id="formMsg" role="status"></p>
+      </div>
+
+      <hr class="footer-rule" />
+
+      <!-- Three info columns -->
+      <div class="footer-cols">
+        <div class="footer-col">
+          <span class="footer-col-icon"><i class="fa-solid fa-envelope" aria-hidden="true"></i></span>
+          <h4><a href="mailto:hello@cosmowraps.com">hello@cosmowraps.com</a></h4>
+          <p>Stay in touch with us.</p>
+        </div>
+
+        <div class="footer-col">
+          <span class="footer-col-icon"><i class="fa-solid fa-phone" aria-hidden="true"></i></span>
+          <h4><a href="tel:+971553326766">+971 55 33 COSMO (26766)</a></h4>
+          <p>We'd love to hear from you.</p>
+        </div>
+
+        <div class="footer-col">
+          <div class="social-icons">
+            <a class="social-circle" href="https://www.instagram.com/cosmowraps.ae" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+            <!-- <a class="social-circle" href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a> -->
+            <!-- <a class="social-circle" href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a> -->
+          </div>
+          <h4>Follow Us</h4>
+          <p>Stay connected for updates and news.</p>
+        </div>
+      </div>
+
+      <hr class="footer-rule" />
+
+      <!-- Copyright -->
+      <div class="footer-bottom">
+        <p>&copy; <span id="year">2024</span> Cosmo Wraps. All rights reserved.</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ============ THANK-YOU POPUP ============ -->
+  <div class="popup-overlay" id="popup" hidden>
+    <div class="popup-card" role="alertdialog" aria-modal="true" aria-labelledby="popupTitle" aria-describedby="popupBody">
+      <button class="popup-close" id="popupClose" type="button" aria-label="Close">&times;</button>
+      <span class="popup-icon"><i class="fa-solid fa-circle-check" aria-hidden="true"></i></span>
+      <h3 id="popupTitle">Thank you!</h3>
+      <p id="popupBody">We will notify you on our launch day.</p>
+      <span class="popup-timer" id="popupTimer" aria-hidden="true"></span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+ 
