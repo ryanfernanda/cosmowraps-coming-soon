@@ -551,7 +551,7 @@ input:focus-visible {
     position: static;
     width: 100%;
     height: 290px;
-    border-radius: var(--radius);
+    /* border-radius: var(--radius); */
   }
 
   /* Features → vertical list */
